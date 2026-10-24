@@ -1,23 +1,12 @@
-# AGENTS.md — habits-cli
+# AGENTS.md — fork de la clase
 
-## Proyecto
-CLI en Python para registrar hábitos de estudio y calcular rachas de días
-consecutivos. Núcleo puro (`habits/core.py`) + capa CLI (`habits/cli.py`).
-Persistencia en JSON local (`habits/storage.py`).
+Este fork parte del repositorio de ejemplo del docente. El proyecto propio para
+la tarea de Planning está en [`gamelog/`](gamelog/README.md): un registro personal
+de resultados de videojuegos.
 
-## Comandos
-- Ejecutar: `python -m habits <comando>`
-- Tests: `pytest -q`
+Antes de trabajar en GameLog, lee [`gamelog/AGENTS.md`](gamelog/AGENTS.md) y los
+documentos aprobados dentro de `gamelog/docs/` y `gamelog/specs/` cuando existan.
+Mantén los archivos y decisiones de GameLog dentro de esa carpeta.
 
-## Estilo
-- Python 3.12+, type hints en todas las funciones públicas.
-- Solo biblioteca estándar (pytest únicamente para tests).
-- Identificadores en inglés; mensajes de usuario en español.
-
-## Reglas
-- Lee `docs/constitution.md` y la spec activa en `specs/` antes de tocar código.
-- No añadas dependencias ni cambies el formato del JSON sin actualizar antes la spec.
-- No modifiques archivos dentro de `specs/` salvo petición explícita.
-
-## Al terminar cualquier tarea
-- Ejecuta `pytest -q` y confirma en tu respuesta que todo pasa.
+El `AGENTS.md` original del docente describía el ejercicio `habits-cli` y queda
+disponible en el historial de Git de este fork.
