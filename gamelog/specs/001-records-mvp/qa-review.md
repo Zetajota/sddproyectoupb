@@ -1,8 +1,8 @@
 # Revisión de QA — Spec 001 de GameLog
 
-- **Documento revisado:** `spec.md`, borrador del 23 de octubre de 2026 (decisiones D-1 a D-16).
+- **Documento revisado:** `spec.md`, versión 1 del 23 de octubre de 2026 (decisiones D-1 a D-16).
 - **Referencia:** `docs/constitution.md` y `clarifications.md`.
-- **Alcance:** detección de problemas; este documento no propone soluciones.
+- **Alcance:** las secciones 1 a 4 solo detectan problemas. La sección 5 registra sus resoluciones posteriores en la versión 2 de la spec.
 
 ## 1. Ambigüedades restantes
 
@@ -33,3 +33,28 @@ No se detectaron contradicciones directas entre los RF de esta versión. La rela
 ## 4. Conflictos con la constitución
 
 No se detectaron conflictos directos. La constitución exige pruebas para cada RF y caso límite, y centralizar la persistencia; la spec todavía no precisa el comportamiento ante fallos de persistencia (hallazgo 10), lo que puede dificultar una verificación completa.
+
+## 5. Resoluciones aplicadas a la versión 2
+
+Las decisiones de alcance D-17 (página web) y D-18 (uso local) fueron dadas por el jugador después de la revisión. Las demás resoluciones precisan comportamientos necesarios para que los requisitos se puedan probar; no añaden funciones principales nuevas.
+
+| Hallazgo | Resolución en la spec versión 2 |
+| --- | --- |
+| 1 | Regla común de nombres: Unicode NFC, espacios extremos, comparación sin mayúsculas, controles prohibidos y máximo de 80 caracteres; RF-1.1, RF-1.4 y RF-2.5. |
+| 2 | «Score» queda como alias de «Puntuación» y no puede crearse como tipo propio; RF-2.1 y RF-2.5. |
+| 3 | Tiempo con dos a seis cifras de minutos, dos de segundos y dos de centésimas; RF-3.4. |
+| 4 | Dígitos ASCII, punto decimal para tipos propios, reglas de ceros y límite de doce cifras enteras; RF-3.5 y RF-3.6. |
+| 5 | La fecha local de la computadora se lee una vez al confirmar el registro; RF-3.2 y CL-19. |
+| 6 | Las ediciones inválidas no cambian datos y cada entrada puede identificarse para editarla o borrarla; RF-1.4, RF-2.5, RF-3.8, RF-3.10 y RF-3.11. |
+| 7 | Cambiar la dirección recalcula inmediatamente récord y orden con los resultados existentes; RF-2.6 y CL-15. |
+| 8 | Se conserva la posición original de registro para desempatar entradas del mismo día; RF-3.8 y RF-4.5. |
+| 9 | El historial completo se muestra sin paginación en el MVP; RF-4.1. |
+| 10 | Un fallo de guardado deja intactos los datos anteriores y muestra un error; RNF-7 y CL-17. |
+| 11 | Se define el estado sin juegos y el estado sin récord; RF-1.2 y RF-4.4. |
+| 12 | Ediciones, borrados y consultas de entradas inexistentes dan error sin cambios; RF-1.8, RF-1.9, RF-2.10, RF-2.11 y RF-3.10. |
+| 13 | Se comprueba el recálculo tras borrar o editar un récord y el estado tras borrar el último; CL-14 y CL-21. |
+| 14 | Se comprueba el cambio de dirección de un tipo propio con historial existente; CL-15. |
+| 15 | El borrado con datos asociados es completo o no ocurre; RNF-7 y CL-17. |
+| 16 | Se comprueban registros del mismo día y alrededor de medianoche en los distintos órdenes; CL-18 y CL-19. |
+
+La protección de «Puntuación» y «Tiempo» se precisó en RF-2.8: no se pueden editar ni borrar por separado, pero sus resultados desaparecen cuando se borra el juego completo. No quedan conflictos directos con la constitución en esta versión.

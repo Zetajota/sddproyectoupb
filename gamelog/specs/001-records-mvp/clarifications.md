@@ -20,5 +20,7 @@ Decisiones tomadas con el propietario del proyecto el 23 de octubre de 2026, ant
 | D-14 | Borrar un tipo propio requiere confirmación y elimina sus resultados; el juego y los demás tipos y resultados se conservan. |
 | D-15 | Al editar un resultado solo cambia su valor; se conservan el juego, el tipo y la fecha original de registro. |
 | D-16 | El historial de cada juego y tipo muestra primero la mejor marca; el jugador también puede ordenarlo por fecha, desde el más antiguo o desde el más nuevo. |
+| D-17 | GameLog se usa como página web desde un navegador. |
+| D-18 | La primera versión se usa localmente en la computadora del jugador; no se publica en internet ni requiere una cuenta de usuario. |
 
-Los detalles que estas decisiones no resuelven se identificarán en `spec.md` con `[NECESITA ACLARACIÓN]`.
+Las reglas derivadas de estas decisiones y las resoluciones de QA constan en `spec.md` y `qa-review.md`.
