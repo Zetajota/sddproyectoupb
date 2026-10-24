@@ -1,6 +1,6 @@
 # Spec 001 — Registro personal de resultados de GameLog
 
-- **Estado:** versión 2 para revisión
+- **Estado:** versión 2, aprobada el 23 de octubre de 2026
 - **Fecha:** 23 de octubre de 2026
 - **Origen:** [constitución](../../docs/constitution.md), [decisiones D-1 a D-18](clarifications.md) y [revisión de QA](qa-review.md)
 
