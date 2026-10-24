@@ -1,6 +1,6 @@
 # Plan 001 — MVP web local de GameLog
 
-- **Estado:** propuesta para revisión
+- **Estado:** aprobado el 23 de octubre de 2026 (Python y Flask confirmados por el jugador)
 - **Fecha:** 23 de octubre de 2026
 - **Base:** [spec 001 v2 aprobada](spec.md), [constitución](../../docs/constitution.md) y [QA resuelto](qa-review.md)
 - **Alcance:** diseño técnico; todavía no se implementa código.
