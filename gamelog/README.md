@@ -15,8 +15,8 @@ Estas decisiones describen la idea inicial. La especificación precisará sus re
 
 ## Documentos
 
-- `docs/constitution.md`: principios del proyecto, pendiente de redactar y revisar.
-- `specs/001-records-mvp/spec.md`: comportamiento del MVP, pendiente.
-- `specs/001-records-mvp/qa-review.md`: revisión de la especificación, pendiente.
+- `docs/constitution.md`: principios aprobados del proyecto.
+- `specs/001-records-mvp/spec.md`: borrador del comportamiento del MVP.
+- `specs/001-records-mvp/qa-review.md`: revisión inicial de la especificación.
 - `specs/001-records-mvp/plan.md`: plan técnico, pendiente.
 - `specs/001-records-mvp/tasks.md`: tareas de implementación, pendiente.
