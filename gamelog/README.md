@@ -11,12 +11,13 @@ Proyecto educativo de desarrollo guiado por especificaciones: una página web pa
 - Cada resultado se registra por separado y recibe automáticamente la fecha del día en que se guarda.
 - Se podrán consultar resultados anteriores y el mejor valor de cada tipo.
 
-Estas decisiones describen la idea inicial. La especificación precisará sus reglas, errores y límites antes de escribir código.
+La especificación aprobada precisa estas reglas, errores y límites antes de escribir código.
 
 ## Documentos
 
 - `docs/constitution.md`: principios aprobados del proyecto.
 - `specs/001-records-mvp/spec.md`: versión 2 del comportamiento del MVP, aprobada.
 - `specs/001-records-mvp/qa-review.md`: hallazgos de QA y sus resoluciones.
-- `specs/001-records-mvp/plan.md`: propuesta de plan técnico para revisión.
-- `specs/001-records-mvp/tasks.md`: tareas de implementación, pendiente.
+- `specs/001-records-mvp/clarifications.md`: decisiones tomadas durante la definición del alcance.
+- `specs/001-records-mvp/plan.md`: plan técnico aprobado.
+- `specs/001-records-mvp/tasks.md`: tareas de implementación planificadas; ninguna iniciada.
